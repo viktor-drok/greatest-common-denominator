@@ -1,5 +1,9 @@
 
-const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+btn.onclick = function () {
+    output.value = calcGreatestCommonDenominator(input1.value, input2.value)
+}
 
 function calcGreatestCommonDenominator(num1, num2) {
     const multipliers1 = findPrimeMultipliers(num1)
@@ -32,6 +36,7 @@ function findCommonValues(arr1, arr2) {
             if (arr1[i] === arr2[j]) {
                 commonValues.push(arr1[i])
                 arr2.splice(j, 1)
+                break
             }
         }
     }

@@ -5,6 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script defer src="./script.js"></script>
   </head>
-  <body></body>
+  <body style="margin: 0 auto; max-width: 500px; padding-top: 150px">
+    <form
+      action="javascript:"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+      "
+    >
+      <label>
+        <input
+          style="width: 100%; box-sizing: border-box"
+          type="number"
+          id="input1"
+        />
+        <span style="font-size: 35px">Fist number</span>
+      </label>
+
+      <label>
+        <input
+          style="width: 100%; box-sizing: border-box"
+          type="number"
+          id="input2"
+        />
+        <span style="font-size: 35px">Second number</span>
+      </label>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <button
+          id="btn"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+          "
+        >
+          Find Greatest Common Denominator
+        </button>
+        <output id="output" style="padding-top: 50px; font-size: 40px"
+          >125</output
+        >
+      </div>
+    </form>
+  </body>
 </html>
